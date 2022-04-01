@@ -1,11 +1,11 @@
-#include "game.h"
+// #include "game.h"
+#include "game.cpp"
 using namespace std;
 
 int main(){
 
-    Game game = Game();
-    // game.welcome();
-    cout<<game.test<<endl;
+    Game game;
+    game.welcome();
 
     return 0;
 }

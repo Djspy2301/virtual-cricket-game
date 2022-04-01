@@ -1,6 +1,28 @@
-#include "game.h"
+#include <iostream>
+#include <cstdlib>
+#include <climits>
+#include "team.cpp"       // "player.h", <string>, <vector>
+
 using namespace std;
 
+class Game {
+
+    public:
+
+        Game();
+        int playersPerTeam;
+        int maxBalls;
+        int totalPlayers;
+        std :: string players[11];
+
+        bool isFirstInnings;
+        Team teamA, teamB;
+        Team *battingTeam, *bowlingTeam;
+        Player *batsman, *bowler;
+
+        void welcome();
+
+};
 
 Game :: Game() {
 
